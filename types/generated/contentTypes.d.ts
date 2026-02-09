@@ -470,8 +470,11 @@ export interface ApiApartmentApartment extends Struct.CollectionTypeSchema {
   };
   attributes: {
     active: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    amenities: Schema.Attribute.Component<'apartment.amenity', true>;
     bathroom: Schema.Attribute.Integer;
     bedroom: Schema.Attribute.Integer;
+    bonus: Schema.Attribute.Component<'apartment.bonus', true>;
+    category: Schema.Attribute.Relation<'manyToOne', 'api::category.category'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -490,6 +493,8 @@ export interface ApiApartmentApartment extends Struct.CollectionTypeSchema {
     price: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
     rooms: Schema.Attribute.Integer;
+    rules: Schema.Attribute.Component<'apartment.rules', false>;
+    seo: Schema.Attribute.Component<'apartment.seo', false>;
     shortDescription: Schema.Attribute.String;
     size: Schema.Attribute.Integer;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
@@ -612,6 +617,10 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   };
   attributes: {
     active: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    apartments: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::apartment.apartment'
+    >;
     articles: Schema.Attribute.Relation<'oneToMany', 'api::article.article'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

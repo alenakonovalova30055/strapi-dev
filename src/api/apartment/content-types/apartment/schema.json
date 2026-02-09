@@ -61,6 +61,32 @@
     },
     "rooms": {
       "type": "integer"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "apartments"
+    },
+    "amenities": {
+      "type": "component",
+      "component": "apartment.amenity",
+      "repeatable": true
+    },
+    "rules": {
+      "type": "component",
+      "component": "apartment.rules",
+      "repeatable": false
+    },
+    "bonus": {
+      "type": "component",
+      "component": "apartment.bonus",
+      "repeatable": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "apartment.seo",
+      "repeatable": false
     }
   }
 }
