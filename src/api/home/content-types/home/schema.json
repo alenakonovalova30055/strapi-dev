@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "adress": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "checkInTime": {
+      "type": "string"
+    },
+    "checkOutTime": {
+      "type": "string"
+    },
+    "telegram": {
+      "type": "string"
+    },
+    "max": {
+      "type": "string"
+    }
+  }
+}

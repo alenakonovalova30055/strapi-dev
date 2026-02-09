@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_apartment_seos",
+  "info": {
+    "displayName": "seo"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string"
+    },
+    "metadesctiption": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

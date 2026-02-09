@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_rich_texts",
+  "info": {
+    "displayName": "rich-text"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "blocks"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

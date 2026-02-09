@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_apartment_bonuses",
+  "info": {
+    "displayName": "bonus"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "included": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "config": {}
+}
