@@ -89,7 +89,7 @@
       "repeatable": false
     },
     "shelterCategoryId": {
-      "type": "integer"
+      "type": "biginteger"
     }
   }
 }
