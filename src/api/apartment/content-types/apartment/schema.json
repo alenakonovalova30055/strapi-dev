@@ -87,6 +87,9 @@
       "type": "component",
       "component": "apartment.seo",
       "repeatable": false
+    },
+    "shelterCategoryId": {
+      "type": "integer"
     }
   }
 }

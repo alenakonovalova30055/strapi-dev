@@ -495,6 +495,7 @@ export interface ApiApartmentApartment extends Struct.CollectionTypeSchema {
     rooms: Schema.Attribute.Integer;
     rules: Schema.Attribute.Component<'apartment.rules', false>;
     seo: Schema.Attribute.Component<'apartment.seo', false>;
+    shelterCategoryId: Schema.Attribute.Integer;
     shortDescription: Schema.Attribute.String;
     size: Schema.Attribute.Integer;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
